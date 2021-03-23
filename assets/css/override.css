@@ -4,4 +4,12 @@
 body {font-family: "Noto Sans TC", sans-serif;}
 h1,h2,h3,h4,h5,h6 {font-family: "Noto Sans TC", sans-serif;}
 
+a{color:#dc630f;}
+a:hover{color:#f49024;}
+
 .navbar-brand {color: #fff;}
+.navbar-brand:hover {color: #fff;}
+
+.navbar-area.sticky .navbar-brand {color: #7438c5;}
+
+.clip-circle {clip-path: circle(50% at 50% 50%);}
