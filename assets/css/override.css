@@ -1,15 +1,105 @@
 /* override */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap");
 
-body {font-family: "Noto Sans TC", sans-serif;}
-h1,h2,h3,h4,h5,h6 {font-family: "Noto Sans TC", sans-serif;}
+body {
+  font-family: "Noto Sans TC", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Noto Sans TC", sans-serif;
+}
 
-a{color:#dc630f;}
-a:hover{color:#f49024;}
+a {
+  color: #dc630f;
+}
+a:hover {
+  color: #f49024;
+}
 
-.navbar-brand {color: #fff;}
-.navbar-brand:hover {color: #fff;}
+.navbar-brand {
+  color: #fff;
+}
+.navbar-brand:hover {
+  color: #fff;
+}
 
-.navbar-area.sticky .navbar-brand {color: #7438c5;}
+.navbar-area.sticky .navbar-brand {
+  color: #7438c5;
+}
 
-.clip-circle {clip-path: circle(50% at 50% 50%);}
+.clip-circle {
+  clip-path: circle(50% at 50% 50%);
+}
+#services .icon {
+  width: 40%;
+}
+#services .single-features {
+  padding: 40px 20px;
+  border-radius: 20px;
+  transition: all .3s ease-in-out;
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, .01);
+}
+#services .single-features:hover {
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, .05);
+} 
+#services .single-features .features-title-icon .features-title a {
+  color: #444;
+  font-size: 40px;
+}
+#services .single-features .features-title-icon .features-icon {
+  padding-right: 10px;
+  text-align: right;
+}
+#services .single-features .features-title-icon .features-icon img.shape {
+  left: 15px;
+}
+#services .single-features .features-content .features-btn {
+  margin-top: 20px;
+  color: #f49024;
+  font-size: 20px;
+  transition: color .3s ease-in-out;
+}
+#services .single-features .features-content .features-btn:hover {
+  color: #7438c5;
+}
+
+#services2.portfolio-area {
+  padding-top: 50px;
+}
+
+
+#services2 .portfolio-menu ul li {
+  font-size: 28px;
+  line-height: 58px;
+}
+
+/* services2 carousel */
+#services2 .carousel {
+  display: flex;
+  width: 100%;
+}
+#services2 .carousel-item {
+  background-color: #fff !important;
+}
+#services2 .carousel-indicators {
+  position: static;
+  display: block;
+  padding: 0;
+  margin: 0;
+  z-index: unset;  
+}
+#services2 .carousel-indicators li {
+  box-sizing: border-box;
+  height: unset;
+  margin: 4px 0 0;
+  background-color: transparent;
+  text-indent: initial;
+  opacity: unset;
+}
+#services2 .carousel-indicators li.active {
+  width: auto;
+}
