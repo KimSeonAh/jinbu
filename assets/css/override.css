@@ -18,6 +18,10 @@ a {
 a:hover {
   color: #f49024;
 }
+* {
+  word-wrap: break-word;
+  word-break: break-all;
+}
 
 .navbar-brand {
   color: #fff;
@@ -333,4 +337,66 @@ a:hover {
 .footer-area .footer-logo img {
   width: 30%;
   height: auto;
+}
+
+
+/* mobile */
+@media (max-width: 375px) {
+  .carousel-indicators {
+    display: none;
+  }
+  .slider-content {
+    padding-top: 147px;
+    padding-bottom: 25px;
+  }
+  .slider-content .title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .pt-120 {
+    padding-top: 100px;
+  }
+  .features-area {
+    padding-top: 100px;
+  }
+  #services2 #services2_carousel div {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  #services2 #services2_carousel .carousel-item {
+    padding: 20px;
+  }
+  #services2 #services2_carousel div:first-child {
+    flex-basis: 150px;
+  }
+  #services2 .service-menu li {
+    padding: 0 5px;
+    font-size: 16px;
+  }
+  #services2 .service-menu .collapse li {
+    font-size: 13px;
+  }
+  /* .single-portfolio .portfolio-image img {
+    width: 50%;
+  } */
+}
+
+@media (max-width: 768px) {
+  #services2 #services2_carousel div {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  #services2 #services2_carousel .carousel-item {
+    padding: 20px;
+  }
+  #services2 #services2_carousel div:first-child {
+    flex-basis: 150px;
+  }
+  #services2 .service-menu li {
+    padding: 0 5px;
+    font-size: 16px;
+  }
+  #services2 .service-menu .collapse li {
+    font-size: 13px;
+  }
 }
