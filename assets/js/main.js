@@ -103,21 +103,19 @@ $(function () {
     ],
   });
 
-
   //===== Isotope Project 4
 
   $(".container").imagesLoaded(function () {
     var $grid = $(".grid").isotope({
       // options
       transitionDuration: "1s",
+      masonry: {
+        horizontalOrder: true,
+      },
     });
 
-    // filter items on button click
-    $(".service-menu ul").on("click", "li", function () {
-      var filterValue = $(this).attr("data-filter");
-      $grid.isotope({
-        filter: filterValue,
-      });
+    $("#accordionExample .collapse").on("shown.bs.collapse", function (event) {
+      $grid.isotope();
     });
 
     //for menu active class
@@ -172,7 +170,6 @@ $(function () {
   //Animate the scroll to yop
   $(".back-to-top").on("click", function (event) {
     event.preventDefault();
-
     $("html, body").animate(
       {
         scrollTop: 0,

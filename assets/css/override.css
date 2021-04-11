@@ -288,9 +288,8 @@ a:hover {
 #faq .faq-accordion .accordion .card .card-header a.collapsed::after {
   background: transparent;
 }
-#faq .grid .col-lg-3 {
-  padding-left: 3px;
-  padding-right: 3px;
+#faq .card-body .col-lg-3 {
+  padding: 5px 0 0 5px;
 }
 .single-portfolio .portfolio-image .portfolio-overlay {
   transform: scale(1);
