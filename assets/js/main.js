@@ -116,14 +116,15 @@ $(function () {
 
     $("#accordionExample .collapse").on("shown.bs.collapse", function (event) {
       $grid.isotope();
+      document.location.href = $(this).data("header");
     });
+  });
 
-    //for menu active class
-    $(".service-menu ul li").on("click", function (event) {
-      $(this).siblings(".active").removeClass("active");
-      $(this).addClass("active");
-      event.preventDefault();
-    });
+  //for menu active class
+  $(".service-menu ul li").on("click", function (event) {
+    $(this).siblings(".active").removeClass("active");
+    $(this).addClass("active");
+    event.preventDefault();
   });
 
   //===== slick Testimonial Four

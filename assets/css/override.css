@@ -326,6 +326,13 @@ a:hover {
   background-color: #b6b6b6;
 }
 
+#faq .card {
+  position: relative;
+}
+#faq .faqAnchor {
+  position: absolute;
+  top: -100px;
+}
 /* contact */
 #contact .form-input .input-items.default input,
 #contact .form-input .input-items.default textarea {
