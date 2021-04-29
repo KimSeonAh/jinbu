@@ -113,7 +113,7 @@ a:hover {
 }
 @media (max-width: 375px) {
   #home .slider-content {
-    padding-top: 330px;
+    padding-top: 290px;
   }
 }
 @media (max-width: 360px) {
