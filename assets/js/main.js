@@ -185,6 +185,16 @@ $(function () {
     interval: false,
   });
 
+  $("#services2_carousel").on('slid.bs.carousel', function (e) {
+    if (e.to == 1) {
+      $("#collapseMenu").collapse("show");
+      $("#collapseMenu li:first-child").addClass("active");
+    }
+    if (e.to == 3) {
+      $(".carousel-indicators > li:last-child").addClass("active");
+    }
+  });
+
   $("#collapseBtn").on("mouseover", function () {
     $("#collapseMenu").collapse("show");
   });
